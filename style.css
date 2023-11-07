@@ -1,0 +1,109 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: url(img.jpg);
+    background-size: cover;
+}
+#container{
+    display:flex;
+    justify-content: flex-end;
+    }
+#box{
+    height: 573px;
+    width: 650px;
+    background-color: rgb(211, 211, 230);
+    margin-top: 11%;
+    margin-right: 8%;
+}
+/* insert css  style of title  */
+.title{
+    border-bottom: 1px solid #E1E8EE;
+    padding: 20px 30px;
+    color: #5E6977;
+    font-style: italic;
+}
+/* insert style for 3 product  */
+.product{
+    padding: 10px 15px;
+    height: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom:  1px solid #E1E8EE;
+    padding-top: 20px;
+
+}
+.button{
+    position: relative;
+    padding-top: 20px;
+    
+}
+.remove{
+    display: inline-block;
+}
+/* style for icone  */
+.heart {
+    font-size: 25px;
+    color:red;
+}
+/* style for despription of 3 product */
+.description{
+    font-size: 14px;
+    color:#43484D;
+    font-weight: 400;
+    padding-top: 18px;
+    
+}
+.item_quantity{
+    margin-top: 35px;
+    color:#43484D;
+    
+}
+.totalPrice{
+    margin-top: 40px;
+    font-size: 14px;
+    color:#43484D;
+    
+}
+#total-cost{
+    color:#43484D;
+    font-style: italic;
+
+}
+
+
+/* responsive code */
+@media(max-width: 800px){
+    #container{
+        width: 100%;
+        height:auto;
+        overflow:hidden;
+    }
+    .product{
+        height: auto;
+        justify-content: center;
+    }
+    .image {
+        width: 100%;
+        text-align: center;
+        margin: 6px 0;
+    }
+    .item_quantity{
+        width: 100%;
+        text-align: center;
+        margin: 6px 0;
+    }
+    .description{
+        width: 100%;
+        text-align: center;
+        margin: 6px 0;
+    }
+    .button{
+        margin-right: 20px;
+    }
+    .body{
+        width: 100%;
+        height:auto;
+        overflow:hidden;
+    }
+}
